@@ -14,7 +14,8 @@
     "build:sass": "sass --style=compressed --no-source-map sass:css",
     "build:autoprefixer": "postcss css/*.css --use autoprefixer -d css",
     "build-dev": "npm-run-all build-dev:sass build:autoprefixer",
-    "build-dev:sass": "sass --style=expanded --source-map sass:css"
+    "build-dev:sass": "sass --style=expanded --source-map sass:css",
+    "watch:browsersync": "browser-sync start --server --files \"css/*.css\" \"*.html\""
   },
   "keywords": [],
   "author": "",
